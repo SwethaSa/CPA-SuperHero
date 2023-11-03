@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  height: 20cm;
+  height: 23cm;
   padding: 1cm;
   padding-top: 0;
   padding-bottom: 0;
@@ -32,7 +32,8 @@ img:hover {
   transform: translateX(10px);
 }
 
-#btn {
+#btn,
+#search-btn {
   padding: 15px;
   border-radius: 10px;
   font-family: Merienda;
@@ -44,6 +45,47 @@ img:hover {
   background-color: lightpink;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
   margin-bottom: 20px;
+}
+
+#search-btn {
+  padding: 8px;
+  font-size: medium;
+  margin-left: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.9);
+  text-shadow: 1px 1px rgb(196, 62, 82);
+}
+
+#search-btn:hover {
+  transform: translateY(1px);
+  cursor: grab;
+}
+
+input {
+  background-color: lightpink;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+  font-family: Merienda;
+  font-size: x-large;
+  width: 5cm;
+  text-align: center;
+  color: rgb(143, 6, 33);
+  margin-bottom: 15px;
+}
+
+input::placeholder {
+  font-size: small;
+  text-shadow: none;
+  text-align: center;
+  color: rgb(95, 3, 22);
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #btn:hover {
